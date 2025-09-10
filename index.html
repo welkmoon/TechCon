@@ -16,15 +16,20 @@
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
+        data-hx-get="partials/global.header-nav.partial.html"
       ></nav>
     </header>
-    <main class="main"></main>
+    <main
+      class="main"
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="partials/index.main.partial.html"
+    ></main>
     <footer
       class="footer"
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
-      data-hx-get="global.footer.partial.html"
+      data-hx-get="partials/global.footer.partial.html"
     ></footer>
   </body>
 </html>
