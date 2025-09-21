@@ -58,10 +58,6 @@
   transform: translateY(8px);
 }
 
-.header__nav{
-    /* display: flex;
-    align-items: center; */
-}
 
 .header__nav-menu{
     list-style: none;
