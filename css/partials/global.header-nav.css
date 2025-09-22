@@ -70,6 +70,7 @@
   transition: color var(--transition-speed);
   font-weight: 500;
   position: relative;
+  font-family: var(--font-base);
 }
 
 .header__nav-menu-link::after {
