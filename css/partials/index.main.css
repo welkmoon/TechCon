@@ -1,5 +1,6 @@
 .hero {
-  background: url("../../img/index/background-banner.png") no-repeat center center / cover;
+  background: url("../../img/index/background-banner.png") no-repeat center
+    center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,14 +10,14 @@
   padding-bottom: 5rem;
 }
 
-.hero__header{
+.hero__header {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   max-width: 50rem;
 }
 
-.hero__subtitle{
+.hero__subtitle {
   font-family: var(--font-mono);
   color: var(--color-brand);
   font-size: 0.6rem;
@@ -25,15 +26,15 @@
   letter-spacing: 0.15rem;
 }
 
-.hero__title-accent{
+.hero__title-accent {
   color: var(--color-accent-1);
 }
 
-.hero__title-dot{
+.hero__title-dot {
   color: var(--color-accent-2);
 }
 
-.hero__description{
+.hero__description {
   font-family: var(--font-base);
   color: var(--color-main);
   margin-top: 2.8rem;
@@ -41,25 +42,19 @@
   font-weight: 400;
 }
 
-.hero__description-accent{
+.hero__description-accent {
   color: var(--color-brand);
   font-size: 1.2rem;
   font-weight: 700;
 }
 
-.hero__partners-label{
+.hero__partners-label {
   display: inline-block;
   margin-top: 1.56rem;
-  color:var(--color-header-text);
-  
+  color: var(--color-header-text);
 }
 
-
-
-
-
-
-.hero__title{
+.hero__title {
   margin-top: 1.25rem;
   font-size: var(--ui-hero-title-size-mobile);
   color: var(--color-main);
