@@ -65,12 +65,12 @@
 }
 
 .header__nav-menu-link {
+  font-family: var(--font-base);
   text-decoration: none;
   color: var(--color-header-text);
   transition: color var(--transition-speed);
   font-weight: 500;
   position: relative;
-  font-family: var(--font-base);
 }
 
 .header__nav-menu-link::after {
