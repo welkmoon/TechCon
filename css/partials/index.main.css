@@ -25,6 +25,40 @@
   letter-spacing: 0.15rem;
 }
 
+.hero__title-accent{
+  color: var(--color-accent-1);
+}
+
+.hero__title-dot{
+  color: var(--color-accent-2);
+}
+
+.hero__description{
+  font-family: var(--font-base);
+  color: var(--color-main);
+  margin-top: 2.8rem;
+  max-width: 29rem;
+  font-weight: 400;
+}
+
+.hero__description-accent{
+  color: var(--color-brand);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hero__partners-label{
+  display: inline-block;
+  margin-top: 1.56rem;
+  color:var(--color-header-text);
+  
+}
+
+
+
+
+
+
 .hero__title{
   margin-top: 1.25rem;
   font-size: var(--ui-hero-title-size-mobile);

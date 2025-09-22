@@ -33,6 +33,8 @@ video {
   --color-header-text-hover: #ffffff;
   --color-main: #ffffff;
   --color-brand: #FBE159;
+  --color-accent-1: #72F0E1;
+  --color-accent-2: #FF1392;
 
   --transition-speed: 0.3s;
   --header-height: 5rem;
