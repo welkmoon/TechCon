@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Comme:wght@100..900&display=swap');
 
 *,
 *::before,
@@ -20,7 +20,9 @@ video {
 }
 
 :root {
-    font-family: "Comme", sans-serif;
+  --font-base: "Comme", sans-serif;
+  --font-mono: "Anonymous Pro", monospace;
+  --font-headings: "Albert Sans", sans-serif;
   --font-base-size: 16px;
   --line-height-base: 1.6;
   --content-max: 1200px;
@@ -29,9 +31,14 @@ video {
   --color-header-bg: #1a1825;
   --color-header-text: #ffffffad;
   --color-header-text-hover: #ffffff;
+  --color-main: #ffffff;
+  --color-brand: #FBE159;
 
   --transition-speed: 0.3s;
   --header-height: 5rem;
+
+  --ui-hero-title-size-mobile:2.4rem;
+  --ui-hero-title-size-desktop:4.3rem;
 }
 
 @media (min-width: 768px) {
@@ -42,7 +49,7 @@ video {
 
 @media (min-width: 1200px) {
   :root {
-    --gutter: 48px;
+    --gutter: 36px;
   }
 }
 
