@@ -1,11 +1,16 @@
 .hero {
-  background: url("../../img/index/background-banner.png") no-repeat center
-    center / cover;
+  background: url("../../img/index/background-banner.png") no-repeat 40% center /
+    cover;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 100%;
   min-height: 100vh;
+  padding-top: 5.6rem;
+  padding-bottom: 5rem;
+}
+
+.hero__container {
   padding-top: 5.6rem;
   padding-bottom: 5rem;
 }
@@ -38,7 +43,7 @@
   font-family: var(--font-base);
   color: var(--color-main);
   margin-top: 2.8rem;
-  max-width: 29rem;
+  max-width: 38rem;
   font-weight: 400;
 }
 
@@ -52,6 +57,8 @@
   display: inline-block;
   margin-top: 1.56rem;
   color: var(--color-header-text);
+  font-family: var(--font-base);
+  font-size: 1.14rem;
 }
 
 .hero__title {
@@ -61,8 +68,130 @@
   font-family: var(--font-headings);
 }
 
+.hero__partners-logos {
+  margin-top: 3rem;
+  max-width: 25rem;
+}
+
+.hero__partners-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  list-style: none;
+  justify-items: center;
+  align-items: center;
+}
+
+.hero__partners-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__partners-logo{
+  max-width: 100%;
+
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.hero__partners-logo:hover {
+  opacity: 1; 
+}
+
+.hero__footer{
+  margin-top: 3.5rem;
+}
+
+.hero__buttons{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero__button--buy{
+  padding: 1.25rem 2.4rem;
+  background-color: var(--color-brand);
+  color: var(--color-btn-text);
+  border: none;
+  text-decoration: none;
+  font-family: var(--font-base);
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero__button--buy:hover{
+  background-color: var(--color-btn-bg);
+}
+
+.hero__button--discover{
+  font-style: italic;
+  font-family: var(--font-base);
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-brand);
+}
+
+.hero__social{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  max-width: 35rem;
+  gap: 1rem;
+}
+
+.hero__social-list{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 5rem;
+}
+
+.hero__social-item{
+  color: var(--color-brand);
+  font-family: var(--font-mono);
+  font-size: 0.69rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: 700;
+}
+
+
+
 @media (min-width: 768px) {
   .hero__title {
     font-size: var(--ui-hero-title-size-desktop);
+  }
+
+  .hero__container {
+    padding-top: 6.56rem;
+  }
+
+  .hero__description{
+    max-width: 29rem;
+  }
+
+  .hero__partners-logos{
+    max-width: 35rem;
+  }
+
+  .hero__partners-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 в ряд */
+  }
+  .hero__social{
+    flex-direction:row;
+    align-items: end;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .hero__container {
+    padding-top: 7.5rem;
   }
 }

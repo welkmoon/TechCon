@@ -35,6 +35,8 @@ video {
   --color-brand: #FBE159;
   --color-accent-1: #72F0E1;
   --color-accent-2: #FF1392;
+  --color-btn-text: #222030;
+  --color-btn-bg: #fe75bf;
 
   --transition-speed: 0.3s;
   --header-height: 5rem;
