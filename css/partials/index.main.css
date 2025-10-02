@@ -1,13 +1,12 @@
 .hero {
   background: url("../../img/index/background-banner.png") no-repeat 40% center /
     cover;
+  height: auto;
+  min-height: auto;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   width: 100%;
-  min-height: 100vh;
   padding-top: 5.6rem;
-  padding-bottom: 5rem;
 }
 
 .hero__container {
@@ -32,11 +31,11 @@
 }
 
 .hero__title-accent {
-  color: var(--color-accent-1);
+  color: var(--color-accent-blue);
 }
 
 .hero__title-dot {
-  color: var(--color-accent-2);
+  color: var(--color-accent-pink);
 }
 
 .hero__description {
@@ -100,7 +99,7 @@
 }
 
 .hero__footer{
-  margin-top: 3.5rem;
+  margin-top: 4.5rem;
 }
 
 .hero__buttons{
@@ -149,7 +148,7 @@
   display: flex;
   gap: 1rem;
   list-style: none;
-  margin-top: 5rem;
+  margin-top: 8rem;
 }
 
 .hero__social-item{
@@ -159,6 +158,140 @@
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   font-weight: 700;
+}
+
+.about__conference-highlights{
+  background-color: var(--color-highlight-bg);
+  padding: 1rem 0 ;
+ 
+}
+
+.about__conference-highlight-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+  justify-items: center
+}
+
+.about__conference-highlight{
+  max-width: 25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about__conference-highlight-icon{
+  height: 3rem;
+}
+
+.about__conference-highlight-title{
+  font-family: var(--font-headings);
+  color: var(--color-highlight-title);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 26.4px;
+}
+
+.about__conference-highlight-text{
+  font-family: var(--font-base);
+  color: var(--color-highlight-text);
+  font-size: 1.06rem;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+
+.about__conference-intro{
+  background-color: var(--color-main-bg);
+  padding: 6.25rem 0 6.87rem 0;
+}
+
+.about__conference-title-accent--pink{
+  color: var(--color-accent-pink);
+}
+
+.about__conference-title-accent--yellow{
+  color: var(--color-accent-yellow);
+}
+
+.about__conference-title-accent--blue{
+  color: var(--color-accent-blue);
+}
+
+.about__conference-intro-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about__conference-title{
+  font-family: var(--font-headings);
+  color: var(--color-main);
+  font-size: 2.125rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  max-width: 50rem;
+}
+
+.about__conference-description{
+  margin-top: 2.8rem;
+  max-width: 50rem;
+  font-size: 1.06rem;
+  font-family: var(--font-base);
+  font-weight: 400;
+  color: var(--color-about-text);
+
+}
+
+.about__conference-description-highlight{
+  font-weight: 600;
+  color: var(--color-main);
+  text-decoration: underline;
+   display: inline;
+}
+
+.about__conference-countdown-container{
+  margin-top: 2.44rem;
+}
+
+.about__conference-countdown{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  
+  justify-items: center;
+  align-items: center;
+  width: 100%; 
+  gap: clamp(1rem, 4vw, 8rem);
+  text-align: center;
+}
+
+.about__conference-countdown-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__conference-countdown-number{
+  font-family: var(--font-headings);
+  color: var(--color-main); 
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 700;
+}
+
+.about__conference-countdown-label{
+  font-family: var(--font-base);
+  color: var(--color-main); 
+  font-size: clamp(1rem,2vw, 1.2rem);
+  opacity: .54;
+  font-weight: 400; 
+}
+
+.section-divider {
+  display: block;
+  width: 100%;
+  height: 35px;
+  fill: var(--color-main-bg);
 }
 
 
@@ -181,12 +314,29 @@
   }
 
   .hero__partners-list {
-    grid-template-columns: repeat(3, 1fr); /* 3 в ряд */
+    grid-template-columns: repeat(3, 1fr); 
   }
   .hero__social{
     flex-direction:row;
     align-items: end;
   }
+  .about__conference-highlight-container{
+    grid-template-columns: 1fr 1fr;
+  }
+  .about__conference-title{
+    font-size: 3rem;
+    line-height: 3.2rem;
+  }
+  .about__conference-intro{
+    padding: 8.44rem 0 8.25rem 0;
+  }
+  .about__conference-description{
+  margin-top: 3.125rem;
+  }
+  .about__conference-countdown-container{
+  margin-top: 3.44rem;
+  
+}
 
 }
 
@@ -194,4 +344,21 @@
   .hero__container {
     padding-top: 7.5rem;
   }
+  .about__conference-highlight-container{
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2.5rem;
+  }
+  .about__conference-highlight:first-child{
+  min-width: 21rem;
+  }
+    .about__conference-intro{
+    padding: 10.62rem 0 10.3rem 0;
+  }
+}
+
+@media (max-width: 300px) {
+  .about__conference-countdown{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
 }

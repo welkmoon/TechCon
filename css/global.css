@@ -32,12 +32,17 @@ video {
   --color-header-text: #ffffffad;
   --color-header-text-hover: #ffffff;
   --color-main: #ffffff;
+  --color-main-bg:#151419;
   --color-brand: #FBE159;
-  --color-accent-1: #72F0E1;
-  --color-accent-2: #FF1392;
+  --color-accent-blue: #72F0E1;
+  --color-accent-pink: #FF1392;
+  --color-accent-yellow:#FBE159;
   --color-btn-text: #222030;
   --color-btn-bg: #fe75bf;
-
+  --color-highlight-bg: #e2ff74;
+  --color-highlight-title: #151419;
+  --color-highlight-text: #15141985;
+  --color-about-text: #ffffffb8;
   --transition-speed: 0.3s;
   --header-height: 5rem;
 
